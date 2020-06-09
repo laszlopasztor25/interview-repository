@@ -140,7 +140,7 @@ public class PokerHandController {
 		opponentHand.setHandType(opponentHandType);
 
 		if (handType == opponentHandType) {
-			handTypeRankController.setRankForType(handType, opponentHand);
+			handTypeRankController.setRankForSameType(handType, opponentHand);
 		}
 
 		if (hand.getRank() - opponentHand.getRank() > 0) {

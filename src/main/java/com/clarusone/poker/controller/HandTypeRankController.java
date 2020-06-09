@@ -30,7 +30,7 @@ public class HandTypeRankController {
 		this.cardCounter = getCardCount(cards);
 	}
 
-	public void setRankForType(HandType handType, PokerHand opHand) {
+	public void setRankForSameType(HandType handType, PokerHand opHand) {
 		sameTypeRanks.get(handType).accept(opHand);
 	}
 
